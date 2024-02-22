@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loader">
+      <img src="/1474.gif" alt="" />
+    </div>
+    <!-- header -->
+    <div id="content" style="display: none">
+      <header class="container-fluid head">
+        <img
+          class="logo"
+          src="https://atghelp.files.wordpress.com/2017/02/logo-in.png?w=774&h=178&crop=1"
+          alt="logo"
+        />
+        <div>
+          <form class="d-flex search" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+        <div class="create">
+          <div class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span id="userDetails"></span>
+              <span
+                id="createAccountLink"
+                style="color: blue; text-decoration: underline; display: none"
+              >
+                Create account. It’s free!
+              </span>
+            </a>
+            <ul class="dropdown-menu touch">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="/login Components/SignIn.html"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  SignIn</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="/login Components/signup.html"
+                  >SignUp</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- hero -->
+      <div class="hero">
+        <div class="content">
+          <h1>Computer Engineering</h1>
+          <p>142,765 Computer Engineers follow this</p>
+        </div>
+      </div>
+      <!-- feeds -->
+      <div class="feed-top-1">
+        <div class="feed-top">
+          <div class="feed-top-first">
+            <p style="text-decoration: underline">All Posts(32)</p>
+            <p>Article</p>
+            <p>Events</p>
+            <p>Education</p>
+            <p>Job</p>
+          </div>
+          <div class="feed-top-last">
+            <button>Write a Post</button>
+            <button class="change">Join group</button>
+          </div>
+        </div>
+        <div class="feedtopsmall">
+          <div class="feedsm">
+            <h1>Posts(368)</h1>
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle"
+                style="visibility: visible"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Filter: All
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="space">
+            <hr />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-8 feed">
+            <div class="card box">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/8f0b/5f52/59515bfc8d2d4ff8928be097376153e9?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aq79hyrRCea1e2ZOkWrEMy67Pz6ayLDsmkJMm~r40f-8R3T8prtqoxD-SDk8ttaFHBVcqOGpG1XO~w9ybR-RYy5ZmxpEGN6Ua7orma4lF5RfSnI5329D~aMXRtb5rtbF4XpU85sEdCSTjfhyvC3uaZCFypLFao0e6zrFPNeBW6hSB3mSU2IByO69CvASWUsraFmTQYsiONkOmlDPK-2TzvpRSAul-UuGSKzXQPHHksJYILvpqPvcHT2HH4UmmLW3FSKQOb5b670SG8cxs5bsa8drqsvNg65-56lsF~CLDmQfr6ohJvZ7mCE0Np55an8mTwoM76uTYEKjQjTFMfvISQ__"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <h1 style="font-size: 22px">
+                    What if famous brands had regular fonts? Meet <br />
+                    RegulaBrands!
+                  </h1>
+                  <div class="dropdown">
+                    <button
+                      class="options"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="tdot">...</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Edit</a></li>
+                      <li><a class="dropdown-item" href="#">Report</a></li>
+                      <li><a class="dropdown-item" href="#">Option3</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+              <div class="card-bottom">
+                <div class="profile-div">
+                  <img
+                    class="profile"
+                    src="https://s3-alpha-sig.figma.com/img/d809/8d9d/f42d73f4b2b7835b4c918c4edcf10f64?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PbZd5nauPWWfdrUiU-wgLoDMl705LXOjEoffiLOQc370MyPwuGLASkj2O8E2RcepxB5RPuEqsj0bxad9GGjhJYI1vygK1dRC9WJZJICwlu8Mf3bGSOr2ENjlW3DQovGR2HFph5RqHlOmsJRXYZcJrdjDjqbFunx9lDa5f~W-qurt65cxO0PeFJ~nyXPMiofbx7r7DfsLdVF~T1m4WrqEPgKE6~imAKSSyiJXRYxuQFOpaqx1TzDDM58B6d2q0AB6YqGrRFucEepWl-25EPJU5CBcbHfs4JM4hDvm7tdcmNnSc0-LafjPeCZhiiZvD~1OJ5T7aAotmmcxQxzEF5zvqA__"
+                    alt=""
+                  />
+                  <h1>Sarthak Kamra</h1>
+                </div>
+                <div class="profile-view">
+                  <p style="padding-top: 0.5rem">
+                    <img
+                      width="20"
+                      height="20"
+                      src="https://cdn-icons-png.flaticon.com/128/709/709612.png"
+                      alt=""
+                    />
+                    1.4kview
+                  </p>
+                  <div class="share">
+                    <img
+                      width="20"
+                      height="20"
+                      src="https://cdn-icons-png.flaticon.com/128/1358/1358023.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="card box">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/250a/24fe/c8e32137d06a7bb3fd57b6dfb4e07bfe?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=maqd1QhoE15rgXjddfjjy7lMwvDP4XfzOw6WpE1WVm6DXRYwK-4nBNGQKnYs6krw3tV8cN-09Y~7ktUK6RhTcyvCXzYjVWy7ARdT--LzF1XiXP5q8jl9M979V9fzEAGF5QKTHzfgIbHGrZH1GwhN3QHLbgyZccQQOMfZATiMEA6y8luTgJr95sOsuR~aBj~uvuzKnfnWbsNS6UYnnpGM5KXYLnsOmupW3QdUtGnMyngFX8f5NRw2BWNFjS7D10GfJRXyYkRyr1crm6deSY4dqCo-j6n0cbgQHSzPRAfJn7wpmVitJ7c5jeiABVjyZln0otSdR~KOyIath9q7PntSHA__"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <h1 style="font-size: 22px">
+                    Tax Benefits for Investment under National Pension Scheme
+                    launched by Government
+                  </h1>
+                  <div class="dropdown">
+                    <button
+                      class="options"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="tdot">...</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Edit</a></li>
+                      <li><a class="dropdown-item" href="#">Report</a></li>
+                      <li><a class="dropdown-item" href="#">Option3</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="card-text">
+                  I’ve worked in UX for the better part of a decade. From now
+                  on, I plan to rei…
+                </p>
+              </div>
+              <div class="card-bottom">
+                <div class="profile-div">
+                  <img
+                    class="profile"
+                    src="https://s3-alpha-sig.figma.com/img/c20f/9a59/15d7211204149d93adda6dfafb5d81f2?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Kwt35Gd~UF5X~f-3pSzhVMVAqGdviWrNKTZdo-ab~qXwwQiwQjO4ptU7JHwUOCStYSavr4KsL34n6ryYVTmSSxW-9qpg2UChqK~9p82pt~pyEgDYBYUbA8jUAB5Eywt6x3SKvh3vCldrZnVwYKOaYIxtJ7~TTvtUjeYRnhVWqhrOSKjnuRuj0wVUINjL7QyxKiY7QsDCA41enpfd7eDc4D1JVeJmxv3sCKkywbSbuTp33PXaRQKGskXDDgQkrXE9rfRNiwJ2Gmay5iSC3Hp-XUcpM~QRUa5H2Kd8bUNsK1ASK4F1IByEbutm2mAntESftEMocEO9hhgWuSjk3Wjl5A__"
+                    alt=""
+                  />
+                  <h1>Sarah West</h1>
+                </div>
+                <div class="profile-view">
+                  <p style="padding-top: 0.5rem">
+                    <img
+                      width="20"
+                      height="20"
+                      src="https://cdn-icons-png.flaticon.com/128/709/709612.png"
+                      alt=""
+                    />
+                    1.4kview
+                  </p>
+                  <div class="share">
+                    <img
+                      width="20"
+                      height="20"
+                      src="https://cdn-icons-png.flaticon.com/128/1358/1358023.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="card box">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/bdc0/79a9/a2e530610a1b91c9682ba7889c87c1b2?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Gpr0kt8fiz8pUgxL8dhMiszOd9XdphGCLBk4uCPk003eDVLYSp-ePeljqa2~J8rVCuowZc~d0rRAqZAJAcKijtqWgBI-3tAITYMpKl6k4NJ0gfgLhckBR-k13JbwzA6pbhL3zf4VBYf0w~RkrPei7rly58aP1NRcSWbssn7MZ-1uifQsyblcVEuNqcfcpj1mqq10YnC9piWQYg2S2KIDy~qxtfjbI4G6baUVCb2caOi~AOfP2k2ndVsxeKv39FeHgrjp0VZAExDyoKDkCyt5Jxf~nOEzZqaP-ENqTxcBgoYPo~AtIb2iPGq1Cf6OPj6SgQuJygJo-AgO259ack3-Dg__"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p>🗓️ Meetup</p>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <h1 style="font-size: 22px">
+                    Finance & Investment Elite Social Mixer @Lujiazui
+                  </h1>
+                  <div class="dropdown">
+                    <button
+                      class="options"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="tdot">...</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Edit</a></li>
+                      <li><a class="dropdown-item" href="#">Report</a></li>
+                      <li><a class="dropdown-item" href="#">Option3</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="creator">
+                  <div class="Created-place">
+                    <p>
+                      <img
+                        width="20"
+                        height="20"
+                        src="https://cdn-icons-png.flaticon.com/128/8181/8181941.png"
+                        alt=""
+                      />
+                      Fri, 12 Oct, 2018
+                    </p>
+                    <p>
+                      <img
+                        width="20"
+                        height="20"
+                        src="https://cdn-icons-png.flaticon.com/128/819/819865.png"
+                        alt=""
+                      />
+                      Ahmedabad, India
+                    </p>
+                  </div>
+                  <button>Visit Website</button>
+                </div>
+              </div>
+              <div class="card-bottom">
+                <div class="profile-div">
+                  <img
+                    class="profile"
+                    src="https://s3-alpha-sig.figma.com/img/b8a9/097f/c3ac7682e52df2e10d0a36ec3f243a44?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dLinD5DN8p1wOJvGotdT1J2ykjlys8SNlXirZ1~YIj4calQFLs12H8sBBhWDrFKiFm6WCMnPcnmUx~eYa8wynalUFet3nbJa~EIPWjlYm222uGXCdfdZ4IbV7UiJmRBE2p8Fhd3Tx0S2Np6tPU-IN95RhdFCqHzCXg5hi5F~3UN5EurakevaIocGUBdyLYOO3gl2lZMmvvflhEqAnDeCz3Y7FDr~oEe9L2yBCpffrUYWHxmhbE9v85PIiDIrFB44MZvvRJroEqhUyyvMj6vbXJtNNmqLU0ls1yrPENlXYksHleM2~RwLK6VFSWUjU85i-ws6DrPQLMQG9vBm-5ewNQ__"
+                    alt=""
+                  />
+                  <h1>Ronal Jones</h1>
+                </div>
+                <div class="profile-view">
+                  <p style="padding-top: 0.5rem">
+                    <img
+                      width="20"
+                      height="20"
+                      src="https://cdn-icons-png.flaticon.com/128/709/709612.png"
+                      alt=""
+                    />
+                    1.4kview
+                  </p>
+                  <div class="share">
+                    <img
+                      width="20"
+                      height="20"
+                      src="https://cdn-icons-png.flaticon.com/128/1358/1358023.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="card box">
+              <div class="card-body">
+                <p>💼️ Job</p>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <h1 style="font-size: 22px">Software Developer</h1>
+                  <div class="dropdown">
+                    <button
+                      class="options"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="true"
+                    >
+                      <span class="tdot">...</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Edit</a></li>
+                      <li><a class="dropdown-item" href="#">Report</a></li>
+                      <li><a class="dropdown-item" href="#">Option3</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="creator">
+                  <div class="Created-place">
+                    <p>
+                      <img
+                        width="20"
+                        height="20"
+                        src="https://cdn-icons-png.flaticon.com/128/126/126515.png"
+                        alt=""
+                      />
+                      Innovaccer Analytics Private Ltd.
+                    </p>
+                    <p>
+                      <img
+                        width="20"
+                        height="20"
+                        src="https://cdn-icons-png.flaticon.com/128/819/819865.png"
+                        alt=""
+                      />
+                      Noida, India
+                    </p>
+                  </div>
+                  <button style="color: #54b976">Apply On TimesJobs</button>
+                </div>
+              </div>
+              <div class="card-bottom">
+                <div class="profile-div">
+                  <img
+                    class="profile"
+                    src="https://s3-alpha-sig.figma.com/img/8199/8e3c/09c5683fd07ee58841475464a08ce69f?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X2TF4ek7OMkzyR86VZWWw1paiRQNarAL8BsUM0L7eqdltPcx6d6Ptc0B4ydN~JkPib0iXvgTXnEXNdRNSv5iuXIDjGNpEun-HGBYH-am4s~roh3PEWVH9zZ2KwNgpGutvptT3h2o7ldx2I28Scj0M~qnEqAZMtFy0Z~ADGfjUvuO65gnOcWHq7dxfiGkG59f7-gTOUauIJDsfKPJ6moBSeybwPLh~Ao-cLt1k-cPlzV8dSASxGDUuBq1zHtu1wcQ-~XTG-g5hdWhlnKFyK-Ej1kB2jZz6n1a05K~1AB3Ow2t73L6~JUwhD29r4-pO6nmuE3T3z4uBmgQZ0U8mMBlzg__"
+                    alt=""
+                  />
+                  <h1>Joseph Gray</h1>
+                </div>
+                <div class="profile-view">
+                  <p style="padding-top: 0.5rem">
+                    <img
+                      width="20"
+                      height="20"
+                      src="https://cdn-icons-png.flaticon.com/128/709/709612.png"
+                      alt=""
+                    />
+                    1.4kview
+                  </p>
+                  <div class="share">
+                    <img
+                      width="20"
+                      height="20"
+                      src="https://cdn-icons-png.flaticon.com/128/1358/1358023.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+          </div>
+          <div class="col-4 location-do">
+            <div>
+              <div class="location" id="locationSection">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/819/819865.png"
+                  alt=""
+                />
+                <input
+                  type="text"
+                  id="locationInput"
+                  placeholder="Noida, India"
+                />
+                <img
+                  class="location-edit"
+                  src="https://cdn-icons-png.flaticon.com/128/1828/1828911.png"
+                  alt=""
+                />
+              </div>
+              <br />
+              <div class="location-info">
+                <img
+                  style="width: 20px; height: 20px"
+                  src="https://cdn-icons-png.flaticon.com/128/471/471662.png"
+                  alt=""
+                />
+                <p>
+                  Your location will help us serve better and extend a
+                  personalised experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const userDetails = document.getElementById("userDetails");
+        const createAccountLink = document.getElementById("createAccountLink");
+        const dropdownmenu = document.getElementsByClassName("dropdown-item");
+        const firstname = localStorage.getItem("firstname");
+        const lastname = localStorage.getItem("lastname");
+
+        if (firstname && lastname) {
+          userDetails.innerHTML = `
+          <div class="profile-detail" style="display:"flex"">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnv05OiXwxtbjrvtyuxt6xSTUo25190kcF4A&usqp=CAU" alt="logo" />
+            <p>${firstname} ${lastname}</p>
+          </div>
+          `;
+        } else {
+          createAccountLink.style.display = "block";
+          dropdownmenu[0].innerHTML = "<a href=" / " > logout</a>";
+        }
+
+        const locationSection = document.getElementById("locationSection");
+        const locationInput = document.getElementById("locationInput");
+        let focused = false; // Flag to track if focus has been applied
+
+        // Function to add 'no-border' class to input field when focused
+        function addNoBorderClass() {
+          locationInput.classList.add("no-border");
+        }
+
+        // Function to remove 'no-border' class from input field when clicked anywhere else
+        function removeNoBorderClass(event) {
+          if (!locationSection.contains(event.target)) {
+            locationInput.classList.remove("no-border");
+          }
+        }
+
+        // Function to check if header is passed while scrolling and focus input (only once)
+        function handleScroll() {
+          const headerHeight = document.querySelector("header").offsetHeight;
+          if (window.scrollY > headerHeight && !focused) {
+            locationInput.focus();
+            focused = true; // Set the flag to true to indicate focus has been applied
+          }
+        }
+
+        // Add event listener for focus on input field
+        locationInput.addEventListener("focus", addNoBorderClass);
+
+        // Add event listener for click anywhere on the document
+        document.addEventListener("click", removeNoBorderClass);
+
+        // Add event listener for scroll
+        window.addEventListener("scroll", handleScroll);
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("content").style.display = "block";
+        }, 3000); // 3 seconds
+      });
+
+      const change = document.querySelector(".change"); // Corrected selector
+
+change.addEventListener("click", () => { // Removed extra parentheses and fixed arrow function syntax
+  if (change.innerHTML === "Join group") { // Removed parentheses around if statement condition
+    change.style.backgroundColor = "white"
+    change.innerHTML = `
+    <div class="group">
+      <img src="https://cdn-icons-png.flaticon.com/128/1828/1828427.png" />
+      <p> Leave Group </p>
+    </div>
+    `;
+  } else {
+    change.innerHTML = "Join group";
+  }
+});
+
+      // Additional code to execute after loader disappears
+      window.onload = function () {
+        // Code to execute after window is loaded completely
+      };
+    </script>
+  </body>
+</html>
